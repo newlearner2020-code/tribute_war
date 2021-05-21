@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body,html
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    background-size: cover;
+margin:0;
+padding: 0;
+background-image: url(bgwhite.jpg);
+height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
+}
+h1{
+    top: 0px;
+    border: 20px solid white;
+    padding:10px;
+    border-radius: 20px;
+   font-size: 150px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: white;    
+text-align: center;
+justify-content: center;
+}
+p{
+    z-index: 1 ;
+   
+    padding-left: 500px;
+    padding-right:500px;
+    font-size: 50px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.change
+{
+    z-index: 1;
+    border: 3px solid white;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.bubbles
+{
+    width: 100%;
+    position:absolute;
+    height:100%;
+    z-index: 1;
+    overflow:hidden;
+    top: 0;
+    left: 0;
+}
+.bubble
+{
+    position:absolute;
+    bottom: 0;
+    border-radius:50%;
+    background:rgba(255, 255, 255, 0.596);
+    background-repeat: no-repeat;
+    animation: flying 10s infinite ease-in;
+}
+@keyframes flying {
+    0%
+    {
+        bottom: -500px;
+        opacity: 0.5px;
+        transform: translateX(0);
+    }
+    50%
+    {
+        transform: translateX(100px);
+        opacity: 0.5px;
+    }
+    75%
+    {
+        transform: translateX(125px);
+    }
+
+    100%
+    {
+        bottom: 2000px;
+        transform: translateX(200px);
+    }
+    
+}
+.bubble:nth-child(1)
+{
+    width: 150px;
+    height: 150px;
+    left:10%;
+    animation-duration: 5.9s;
+    animation-delay: 1s;
+    transform: translateX(300px);
+    }
+.bubble:nth-child(2)
+{
+    width: 100px;
+    height: 100px;
+    left:20%;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+.bubble:nth-child(3)
+{
+    width: 135px;
+    height: 135px;
+    left:40%;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation-duration: 5s;
+    animation-delay: 2s;
+
+}
+.bubble:nth-child(4)
+{
+    width: 80px;
+    height: 80px;
+    left:50%;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(5)
+{
+    width: 185px;
+    height: 185px;
+    left:65%;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+.bubble:nth-child(6)
+{
+    width: 120px;
+    height: 120px;
+    left:80%;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation-duration: 7.1s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(7)
+{
+    width: 120px;
+    height: 120px;
+    left:90%;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation-duration: 14s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(8)
+{
+    width: 120px;
+    height: 120px;
+    left:52%;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation-duration: 11s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(9)
+{
+    width: 120px;
+    height: 120px;
+    left:8%;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(10)
+{
+    width: 120px;
+    height: 120px;
+    left:87%;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation-duration: 5.5s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(11)
+{
+    width: 120px;
+    height: 120px;
+    left:10%;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation-duration: 5s;
+    animation-delay: 0s;
+}
+.bubble:nth-child(12)
+{
+    width: 120px;
+    height: 120px;
+    left:15%;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation-duration: 4.9s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(13)
+{
+    width: 120px;
+    height: 120px;
+    left:66%;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(14)
+{
+    width: 150px;
+    height: 150px;
+    left:39%;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation-duration: 17s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(15)
+{
+    width: 180px;
+    height: 180px;
+    left:2%;
+    background-repeat: no-repeat;
+    align-items: center;
+    animation-duration: 5s;
+    animation-delay: 2.5s;
+}
+.trib img
+{
+left: 80%;
+padding-left: 3300px;
+padding-top: 650px;
+}
+    </style>
+</head>
+<body>
+    <h1>
+        tribute to those who lost their live due to COVID-19
+    </h1>
+   <div class="change"> <p>
+        one day we will won the fight against pandemic and world become a better place again, we will never forget the the warriors, they sacrifices their life's because of us. This page is giving tribute to those who lose their life due to covid-19.
+    </p></div>
+    <div class="trib">
+        <img src="prey.png">
+    </div>
+    <div class="bubbles">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    </div>
+</body>
+</html>
